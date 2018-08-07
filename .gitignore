@@ -4,4 +4,6 @@
 !.zshrc
 
 
-# 
+# tmux 
+!.tmux.conf
+!/.tmux
