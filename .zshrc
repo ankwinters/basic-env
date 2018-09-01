@@ -1,4 +1,5 @@
 ANTIGEN="$HOME/.local/bin/antigen.zsh"
+[ ! -f "$HOME/.local" ] && mkdir -p $HOME/.local/bin && mkdir -p $HOME/.local/bin/etc && curl -L git.io/antigen > $HOME/.local/bin/antigen.zsh 
 
 # Initialize command prompt
 #export PS1="%n@%m:%~> "
@@ -143,4 +144,3 @@ setopt HIST_VERIFY # Don't execute immediately upon history expansion.
 # ignore complition
 zstyle ':completion:*:complete:-command-:*:*' ignored-patterns '*.pdf|*.exe|*.dll'
 zstyle ':completion:*:*sh:*:' tag-order files
-source /opt/ros/kinetic/setup.zsh
