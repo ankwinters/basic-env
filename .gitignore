@@ -12,3 +12,5 @@
 !.vimrc
 !/.vim
 /.vim/.netrwhist
+# vim submodule
+!.gitmodules

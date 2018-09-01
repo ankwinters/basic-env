@@ -1,4 +1,4 @@
-set shell=/bin/bash
+set shell=/bin/sh
 " ****************vundle配置*********************************************
 set nocompatible              " be iMproved, required
 filetype off                  " required
