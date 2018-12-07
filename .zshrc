@@ -143,4 +143,5 @@ setopt HIST_VERIFY # Don't execute immediately upon history expansion.
 # ignore complition
 zstyle ':completion:*:complete:-command-:*:*' ignored-patterns '*.pdf|*.exe|*.dll'
 zstyle ':completion:*:*sh:*:' tag-order files
-source /opt/ros/kinetic/setup.zsh
+#source /opt/ros/kinetic/setup.zsh
+export GOPATH=~/GO_PATH
