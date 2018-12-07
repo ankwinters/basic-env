@@ -1,0 +1,16 @@
+[submodule "Vundle"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
+
+[submodule "powerline"]
+	path = .vim/bundle/powerline
+	url = https://github.com/powerline/powerline
+
+
+[submodule "syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+
+[submodule "vim-go"]
+	path = .vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go
