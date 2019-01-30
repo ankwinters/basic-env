@@ -146,3 +146,5 @@ zstyle ':completion:*:complete:-command-:*:*' ignored-patterns '*.pdf|*.exe|*.dl
 zstyle ':completion:*:*sh:*:' tag-order files
 #source /opt/ros/kinetic/setup.zsh
 export GOPATH=~/GO_PATH
+
+[ -d "/opt/anaconda/bin" ] && export PATH=/opt/anaconda/bin:$PATH
