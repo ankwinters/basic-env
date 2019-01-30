@@ -26,7 +26,9 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'user/L9', {'name': 'newL9'}
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-"Plugin 'powerline/powerline'
+" Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim/
+Plugin 'powerline/powerline'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -131,7 +133,6 @@ set backspace=indent,eol,start
 " 用空格键来开关折叠
 "********************************powerline starts**********************************8
 "千万别安装powerline-vim这个包，160929
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set laststatus=2
 set t_Co=256
 "********************************powerline ends**********************************8
