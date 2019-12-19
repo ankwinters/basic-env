@@ -1,6 +1,6 @@
 ANTIGEN="$HOME/.local/bin/antigen.zsh"
 [ ! -f "$HOME/.local/bin/antigen.zsh" ] && mkdir -p $HOME/.local/bin && mkdir -p $HOME/.local/etc && curl -L git.io/antigen > $HOME/.local/bin/antigen.zsh 
-
+[  "`ls -A $HOME/.vim/bundle/powerline`" = "" ] && git submodule init && git submodule update
 # Initialize command prompt
 #export PS1="%n@%m:%~> "
 export PS1='%s:%~ >'
@@ -26,7 +26,7 @@ antigen use oh-my-zsh
 
 # default bundles
 # visit https://github.com/unixorn/awesome-zsh-plugins
-# antigen bundle git
+antigen bundle git
 # antigen bundle heroku
 antigen bundle pip
 antigen bundle svn-fast-info
@@ -36,7 +36,7 @@ antigen bundle colorize
 antigen bundle github
 antigen bundle python
 antigen bundle rupa/z z.sh
-# antigen bundle z
+antigen bundle z
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
@@ -147,4 +147,3 @@ zstyle ':completion:*:*sh:*:' tag-order files
 #source /opt/ros/kinetic/setup.zsh
 export GOPATH=~/GO_PATH
 
-[ -d "/opt/anaconda/bin" ] && export PATH=/opt/anaconda/bin:$PATH
